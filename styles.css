@@ -1,0 +1,191 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Montserrat", Sans-serif;
+    vertical-align: baseline;
+}
+
+
+:root{
+    --azul-escuro: #00556f;
+    --branco: #fff;
+    --dourado: #bdc345;
+    --verde-claro: #02dd1f;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: var(--azul-escuro);
+    font-size: 40px;
+    width: 60%;
+    text-align: center;
+}
+
+h2{
+    color: var(--branco);
+    font-size: 25px;
+    padding: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+h3{
+    color: var(--dourado);
+    font-size: 38px;
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+}
+
+h4{
+    color: var(--azul-escuro);
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h5{
+    color: red;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 35px;
+    text-align: center;
+}
+
+
+
+a {
+    padding: 15px 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--branco);
+    background-color: var(--verde-claro);
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-block;
+    animation: grow-shrink 2s infinite;
+}
+
+@keyframes grow-shrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 600px){
+
+    h1{
+        width: 95%;
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    h3{
+        width: 98%;
+        font-size: 30px;
+    }
+    h4{
+        width: 95%;
+    }
+    a{
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+}
+.div-h{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-v{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-azul-escuro{
+    background-color: #00556f;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+.bg02 img{
+    width: 300px;
+    padding: 20px;
+}
+
+.bg02 video{
+    margin-bottom: 30px;
+    width: 700px
+}
+
+.bg02 .rotate {
+    transform: rotate(270deg);
+    color: var(--verde-claro);
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.barra-dourada {
+    background-color: var(--dourado);
+    height: 6px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px;
+  }
+
+
+  @media (max-width: 600px){
+    .bg02 video{
+        width: 300px;
+    }
+  }
