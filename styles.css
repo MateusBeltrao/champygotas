@@ -26,6 +26,8 @@ time, mark, audio, video {
     --branco: #fff;
     --dourado: #bdc345;
     --verde-claro: #02dd1f;
+    --azul-claro: #bcefff;
+    --azul-medio: #6ea6b7;
 }
 main{
     display: flex;
@@ -37,8 +39,9 @@ main{
 h1{
     color: var(--azul-escuro);
     font-size: 40px;
-    width: 60%;
+    width: 70%;
     text-align: center;
+    margin-top: 50px;
 }
 
 h2{
@@ -87,7 +90,23 @@ a {
     font-weight: 800;
     display: inline-block;
     animation: grow-shrink 2s infinite;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+strong{
+    color: var(--azul-escuro);
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+    margin: 20px;
+   
+}
+
+p{
+    font-size: 22px;
+}
+
 
 @keyframes grow-shrink {
     0%, 100% {
@@ -98,11 +117,11 @@ a {
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
 
     h1{
-        width: 95%;
         font-size: 30px;
+        width: 90%;
     }
 
     h2{
@@ -119,6 +138,13 @@ a {
     a{
         font-size: 12px;
         padding: 10px 30px;
+        border-radius: 80px;
+    }
+    strong{
+        width: 100%;
+    }
+    p{
+        text-align: center;
     }
 }
 .div-h{
@@ -134,33 +160,112 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .bg-azul-escuro{
-    background-color: #00556f;
+    background-color: var(--azul-escuro);
     display: flex;
     align-items: center;
     justify-self: center;
 }
 
+.bg-azul-claro{
+    background-color: var(--azul-claro);
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.bg-degrade{
+
+        background-image: linear-gradient(to bottom, #ffffff 40%, #bcefff 90%, #bcefff 100%);
+  
+    
+    
+}
+
+.div-img-text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img-text img{
+    width: 600px;
+  }
+@media (max-width: 1200px){
+    .div-img-text{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+
+.card01{
+    width: 80%;
+    margin: 30px;
+    display: flex;
+  }
+
+ .cards01{
+    
+    background-image: linear-gradient(#fff, #bcefff);
+    margin: 5px;
+    
+  }
+
+.cards01 p{
+    text-align: center;
+    font-size: 19px;
+    width: 85%;
+    font-weight: 400;
+  }
+
+.cards01 img{
+    width: 300px;
+    border-radius: 80px;
+  }
 
 
 
 
 
 
+  @media (max-width: 1000px){
+    .cards01 img{
+        padding: 5px;
+        width: 200px;
+        margin-top: 20px;
+    }
+  }
 
+
+
+  @media (max-width: 900px){
+    .cards01 img{
+        width: 400px;
+    }
+
+    .card01{
+        flex-direction: column;
+    }
+  }
 .bg02 img{
     width: 300px;
     padding: 20px;
 }
 
-.bg02 video{
+ video{
     margin-bottom: 30px;
     width: 700px
 }
 
-.bg02 .rotate {
+.rotate {
     transform: rotate(270deg);
     color: var(--verde-claro);
     font-size: 70px;
@@ -185,7 +290,109 @@ a {
 
 
   @media (max-width: 600px){
-    .bg02 video{
+    video{
         width: 300px;
     }
   }
+
+  @media (max-width: 800px){
+    video{
+        width: 500px;
+    }
+  }
+
+
+ 
+  .bg05{
+    width: 80%;
+  }
+  
+
+  .bg06{
+    width: 100%;
+  }
+  .bg06 .div-v{
+    width: 80%;
+  }
+  
+
+  @media (max-width: 800px){
+    .bg06 .div-v{
+        width: 95%;
+    }
+  }
+
+  .bg08{
+    background-color: var(--azul-claro);
+  }
+
+  .bg08 .card01 .cards01{
+    background: var(--branco);
+  }
+
+  .bg09{
+    width: 80%;
+  }
+
+  .div-video-bg09{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .video-08{
+    margin: 5px;
+  }
+
+  .div-video-bg09 video{
+    width: 400px;
+    border-radius: 20px;
+  }
+
+  
+  @media (max-width: 800px){
+    .div-video-bg09{
+        flex-direction: column;
+    }
+  }
+
+  
+  .div-cards-bg10{
+    margin: 20px;
+    display: flex;
+    background-color: var(--branco);
+    text-align: center;
+  }
+
+  @media (max-width: 800px){
+    .div-cards-bg10{
+        flex-direction: column;
+    }
+  }
+
+
+  .card-bg10-01 a{
+    margin: 0;
+    background: var(--azul-medio);
+    color: #fff;
+  }
+
+  .card-bg10-01 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-bg10-01 .card img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 300px;
+  }
+  .card-bg10-01 .card strong{
+    color: black;
+    text-align: start;
+    width: 80%;
+    text-align: center;
+  }
+
+  
