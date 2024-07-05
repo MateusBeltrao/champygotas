@@ -97,7 +97,7 @@ a {
 strong{
     color: var(--azul-escuro);
     font-size: 25px;
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: 20px;
    
@@ -105,6 +105,8 @@ strong{
 
 p{
     font-size: 22px;
+    width: 80%;
+    
 }
 
 
@@ -355,11 +357,15 @@ p{
     }
   }
 
+  .bg10p{
+    margin-top: 20px;
+    text-align: center;
+  }
   
   .div-cards-bg10{
     margin: 20px;
     display: flex;
-    background-color: var(--branco);
+   
     text-align: center;
   }
 
@@ -369,24 +375,36 @@ p{
     }
   }
 
+  .card-bg10-01{
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: var(--branco);
+  }
+  
 
-  .card-bg10-01 a{
+  .card-bg10-01 a:nth-child(1){
+    font-size: 15px;
     margin: 0;
     background: var(--azul-medio);
     color: #fff;
   }
+
+
+
 
   .card-bg10-01 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
   }
 
   .card-bg10-01 .card img {
     margin-top: 20px;
     margin-bottom: 30px;
-    width: 300px;
+    width: 200px;
   }
   .card-bg10-01 .card strong{
     color: black;
@@ -395,4 +413,135 @@ p{
     text-align: center;
   }
 
+  .bg10 img{
+    width: 350px;
+    margin-bottom: 60px;
+  }
+
+
+  .card11{
+    display: flex;
+    background-color: #ffffff; /* Cor de fundo da div */
+    border: 1px solid #ccc; /* Borda da div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  .card11 strong{
+    font-size: 15px;
+     text-align: start;
+  }
+
+  @media (max-width: 800px){
+    .card11{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card11 strong{
+        text-align: center;
+    }
+  }
+
+
+  .card-bg11 {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-bg11 a{
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 0;
+  }
+
+  .card-bg11 p{
+    color: #818181;
+    font-size: 18px;
+  }
+  .card11text02{
+    margin-top: 20px;
+  }
+
+  @media (max-width: 800px){
+    .card11text02{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .card-bg11 p{
+        font-size: 15px;
+       
+    }
+  }
+
+  .bg12div{
+    display: flex;
+  }
   
+  @media (max-width: 800px){
+    .bg12div{
+        flex-direction: column;
+    }
+  }
+
+
+  .bg13 .div-img-text img{
+    margin: 150px;
+    width: 400px;
+  }
+  
+
+  
+
+
+
+
+.bg15{
+    background-color: var(--azul-claro);
+}
+
+
+  .bg15 .bg15container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-h15{
+    display: flex;
+  }
+
+  
+@media (max-width: 800px){
+    .div-h15{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+  
+
+
+  .bg16{
+    width: 100%;
+    background: var(--azul-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    height: 30px;
+  }
+
+
+  .bg17{
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .bg17 strong{
+    color: #818181;
+  }
