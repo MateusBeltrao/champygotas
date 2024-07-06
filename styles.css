@@ -34,6 +34,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 h1{
@@ -291,11 +292,7 @@ p{
   }
 
 
-  @media (max-width: 600px){
-    video{
-        width: 300px;
-    }
-  }
+ 
 
   @media (max-width: 800px){
     video{
@@ -303,6 +300,11 @@ p{
     }
   }
 
+  @media (max-width: 600px){
+    video{
+        width: 400px;
+    }
+  }
 
  
   .bg05{
@@ -310,6 +312,11 @@ p{
   }
   
 
+ @media (max-width: 600px){
+    .bg05 img{
+        width: 400px;
+    }
+ }
   .bg06{
     width: 100%;
   }
@@ -322,6 +329,10 @@ p{
     .bg06 .div-v{
         width: 95%;
     }
+
+    .bg06 img{
+        width: 400px;
+    }
   }
 
   .bg08{
@@ -331,6 +342,9 @@ p{
   .bg08 .card01 .cards01{
     background: var(--branco);
   }
+
+ 
+
 
   .bg09{
     width: 80%;
@@ -354,6 +368,9 @@ p{
   @media (max-width: 800px){
     .div-video-bg09{
         flex-direction: column;
+    }
+    .bg09 img{
+        width: 400px;
     }
   }
 
@@ -494,9 +511,22 @@ p{
   
 
   
-
-
-
+  @media (max-width: 800px){
+    .bg13{
+        width: 80%;
+    }
+    .bg13 img{
+        width: 200px;
+    }
+    .bg13 h1{
+        margin-top: -50px;
+        width: 400px;
+    }
+    .bg13 p{
+        width: 400px;
+    }
+    
+  }
 
 .bg15{
     background-color: var(--azul-claro);
@@ -545,3 +575,59 @@ p{
   .bg17 strong{
     color: #818181;
   }
+
+
+
+
+  #mais01, #mais02, #mais01, #mais02, #mais03, #mais04, #mais05, #mais06, #mais07{
+    display: none;
+}
+
+.bntLemais{
+    background: none;
+}
+
+.btnText {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.btnText button{
+    font-family: "Montserrat", Sans-serif;
+    color: var(--branco);
+    border: none;
+    width: 800px;
+    text-align: start;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#mais01, #mais02, #mais03, #mais04, #mais05, #mais06, #mais07{
+    background: var(--azul-claro);
+    width: 100%;
+    font-family: "Montserrat", Sans-serif;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.containerbg14{
+    margin-top: 30px;
+    width: 70%;
+}
+
+
+.bg16 strong{
+    color: #fff; 
+    font-size: 20px;
+}
+
+@media (max-width: 800px){
+    .bg16 strong{
+        width: 100%;
+        font-size: 13px;
+    }
+}
