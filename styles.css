@@ -242,7 +242,7 @@ p{
   @media (max-width: 1000px){
     .cards01 img{
         padding: 5px;
-        width: 200px;
+        width: 400px;
         margin-top: 20px;
     }
   }
@@ -251,7 +251,7 @@ p{
 
   @media (max-width: 900px){
     .cards01 img{
-        width: 400px;
+        width: 300px;
     }
 
     .card01{
