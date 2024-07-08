@@ -422,6 +422,7 @@ p{
     margin-top: 20px;
     margin-bottom: 30px;
     width: 200px;
+    height: 300px;
   }
   .card-bg10-01 .card strong{
     color: black;
@@ -438,9 +439,9 @@ p{
 
   .card11{
     display: flex;
-    background-color: #ffffff; /* Cor de fundo da div */
-    border: 1px solid #ccc; /* Borda da div */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   }
   .card11 strong{
     font-size: 15px;
