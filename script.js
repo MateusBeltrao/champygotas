@@ -1,4 +1,20 @@
-const ponto = document.getElementById('ponto');
+function leiaMais(){
+    var ponto01 = document.getElementById("ponto01")
+    var maisTexto01 = document.getElementById("mais01")
+   
+
+    if(ponto01.style.display === 'none'){
+        ponto01.style.display = 'inline'
+      
+        maisTexto01.style.display = 'none'
+    }else{
+        ponto01.style.display = 'none'
+        maisTexto01.style.display = 'inline'
+    }
+   
+
+   
+}
 
 
 function leiaMais02(){
@@ -99,7 +115,23 @@ function leiaMais07(){
 
    
 
-   
+document.addEventListener('DOMContentLoaded', function() {
+    var scrollLink = document.getElementById('scrollLink');
+
+    scrollLink.addEventListener('click', function(e) {
+        e.preventDefault(); // Previne o comportamento padrão do link
+
+        var targetId = this.getAttribute('href').substring(1); // Remove o "#" do href
+        var targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'  // Rolagem suave
+            });
+        }
+    });
+});
+
 
 
 
