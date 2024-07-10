@@ -227,6 +227,7 @@ p{
     font-size: 19px;
     width: 85%;
     font-weight: 400;
+    margin-bottom: 10px;
   }
 
 .cards01 img{
@@ -340,11 +341,33 @@ p{
   }
 
   .bg08 .card01 .cards01{
+    justify-content: flex-start;
     background: var(--branco);
+    height: 800px;
   }
 
+
+  .bg08 .card01 .cards01 img{
+    height: 400px;
+    margin-top: 20px;
+  }
  
 
+  @media (max-width: 800px){
+    .bg08 .card01 .cards01{
+      height: 750px;
+      margin-top: 25px;
+    }
+    .bg08 .card01 .cards01 p{
+      font-size: 18px;
+      width: 70%;
+    }
+
+    .bg08 .card01{
+      margin-top: -10px;
+    } 
+
+  }
 
   .bg09{
     width: 80%;
