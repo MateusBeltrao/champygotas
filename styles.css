@@ -149,6 +149,10 @@ p{
     p{
         text-align: center;
     }
+    iframe{
+      width: 400px;
+      height: 300px;
+    }
 }
 .div-h{
     display: flex;
@@ -359,8 +363,8 @@ p{
       margin-top: 25px;
     }
     .bg08 .card01 .cards01 p{
-      font-size: 18px;
-      width: 70%;
+      font-size: 15px;
+      width: 80%;
     }
 
     .bg08 .card01{
@@ -382,9 +386,10 @@ p{
     margin: 5px;
   }
 
-  .div-video-bg09 video{
+  .div-video-bg09 iframe{
     width: 400px;
     border-radius: 20px;
+    margin: 20px;
   }
 
   
