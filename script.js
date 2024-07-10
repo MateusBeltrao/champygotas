@@ -1,19 +1,4 @@
-function leiaMais(){
-    var ponto01 = document.getElementById("ponto01")
-    var maisTexto01 = document.getElementById("mais01")
- 
-
-    if(ponto01.style.display === 'none'){
-        ponto01.style.display = 'inline'
-        maisTexto01.style.display = 'none'
-    }else{
-        ponto01.style.display = 'none'
-        maisTexto01.style.display = 'inline'
-    }
-   
-
-   
-}
+const ponto = document.getElementById('ponto');
 
 
 function leiaMais02(){

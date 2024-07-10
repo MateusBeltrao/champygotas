@@ -672,3 +672,22 @@ p{
         font-size: 13px;
     }
 }
+
+
+
+
+/* Estilo da imagem */
+.imagem-animada {
+  opacity: 0;
+  transform: translateY(100px); /* Imagem começa abaixo do seu ponto original */
+  animation: entradaDeBaixo 1s ease-out forwards; /* Aplica a animação */
+}
+
+/* Definição da animação */
+@keyframes entradaDeBaixo {
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Imagem termina na posição original */
+  }
+}
+
