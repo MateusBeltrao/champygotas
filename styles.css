@@ -19,6 +19,9 @@ time, mark, audio, video {
     font-family: "Montserrat", Sans-serif;
     vertical-align: baseline;
 }
+html {
+  scroll-behavior: smooth; /* Aplica rolagem suave para links de ancoragem */
+}
 
 
 :root{
