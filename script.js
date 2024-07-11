@@ -114,24 +114,20 @@ function leiaMais07(){
 
 
    
-
-document.addEventListener('DOMContentLoaded', function() {
-    var scrollLink = document.getElementById('scrollLink');
-
-    scrollLink.addEventListener('click', function(e) {
-        e.preventDefault(); // Previne o comportamento padrão do link
-
-        var targetId = this.getAttribute('href').substring(1); // Remove o "#" do href
-        var targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'  // Rolagem suave
-            });
-        }
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = anchor.getAttribute('href').substring(1); // Remove o "#"
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50, // Ajuste o valor de 50 conforme necessário
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
 });
-
-
 
 
